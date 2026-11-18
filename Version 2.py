@@ -1,0 +1,25 @@
+first_name = input("Enter first name: ").strip()
+last_name = input("Enter last name: ").strip()
+section = input("Enter section: ").strip()
+event_name = input("Enter event name: ").strip()
+event_year = input("Enter event year: ").strip()
+event_month = input("Enter event month: ").strip()
+event_day = input("Enter event day: ").strip()
+
+full_name = first_name + " " + last_name
+proper_name = full_name.title()
+name_code = full_name.upper()
+clean_section = section.upper()
+clean_event = event_name.title()
+raw_date = event_month + "/" + event_day + "/" + event_year
+
+print("\nStudent Event Registration Summary")
+print("Name:", proper_name)
+print("Name Code:", name_code)
+print("Section:", clean_section)
+print("Event:", clean_event)
+print("Event Date:", raw_date)
+print("Language Used: Python")
+print("String Feature Used: strip(), title(), upper()")
+print("Date/Time Feature Used: None")
+print("Registration record created successfully.")
